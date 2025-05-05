@@ -1,0 +1,12 @@
+export { AboutSection } from './AboutSection';
+export { BackToTop } from './BackToTop';
+export { ContactCard } from './ContactCard';
+export { Divider } from './Divider';
+export { Footer } from './Footer';
+export { Header } from './Header';
+export { LiveDemoModal } from './LiveDemoModal';
+export { ModalContactForm } from './ModalContactForm';
+export { NavBar } from './NavBar';
+export { Projects } from './Projects';
+export { SEO } from './SEO';
+export { SocialLinks } from './SocialLinks';

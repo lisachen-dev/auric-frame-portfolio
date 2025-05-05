@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Raleway:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+    /* ✅ Font Settings */
+    --font-heading: 'Chonburi', serif;
+    --font-title: 'Raleway', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+/* ✅ Background Colors */
+--background-light: #FAF8F5; /* Warm parchment */
+--background-dark: #161219;  /* Deep fig */
+
+/* ✅ Text Colors */
+--text-light: #241F2A;  /* Inky plum */
+--text-dark: #F4F1ED;   /* Soft ivory */
+
+/* ✅ Primary & Secondary Colors */
+--primary-light: #8E4162;  /* Fig red */
+--primary-dark: #E0AA3E;   /* Golden ochre */
+--secondary-light: #4B6F44; /* Herb green */
+--secondary-dark: #2F3E2C;  /* Pine moss */
+
+/* ✅ Border Colors */
+--border-light: #D8D2C9; /* Weathered bone */
+--border-dark: #5E5563;  /* Smoky plum */
+
+    /* ✅ Button Colors */
+    --button-bg-light: var(--primary-light);
+    --button-bg-dark: var(--primary-dark);
+    --button-hover-light: var(--secondary-light);
+    --button-hover-dark: var(--secondary-dark);
+
+    /* ✅ Profile Card Background */
+    --profile-bg-light: #D6DEE7; /* Soft Cool Gray */
+    --profile-bg-dark: #243447; /* Muted Slate */
+}
+
+@layer base {
+    :root {
+        background-color: var(--background-light);
+        color: var(--text-light);
+        --background-color: var(--background-light);
+        --text-color: var(--text-light);
+        --primary-color: var(--primary-light);
+        --secondary-color: var(--secondary-light);
+        --border-color: var(--border-light);
+        --button-bg: var(--button-bg-light);
+        --button-hover: var(--button-hover-light);
+        --profile-bg: var(--profile-bg-light);
+    }
+
+    .dark {
+        background-color: var(--background-dark);
+        color: var(--text-dark);
+        --background-color: var(--background-dark);
+        --text-color: var(--text-dark);
+        --primary-color: var(--primary-dark);
+        --secondary-color: var(--secondary-dark);
+        --border-color: var(--border-dark);
+        --button-bg: var(--button-bg-dark);
+        --button-hover: var(--button-hover-dark);
+        --profile-bg: var(--profile-bg-dark);
+    }
+}
+
+/* ✅ Font Utility Classes */
+.font-heading {
+    font-family: var(--font-heading);
+}
+
+.font-title {
+    font-family: var(--font-title);
+}
+
+.font-body {
+    font-family: var(--font-body);
+}
+
+.border {
+    border-color: var(--border-color);
+}
+
+.first-letter {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-right: 4px;
+}
+
+/* ✅ Scrollbar Styling */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.7); /* gray-400 */
+  border-radius: 20px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.9); /* gray-500 */
+}
+
+/* ✅ Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+@keyframes floatAndGlow {
+  0%, 100% {
+    transform: translateY(0px);
+    box-shadow: 0px 0px 20px rgba(156, 163, 175, 0.3); /* gray-400 */
+  }
+  50% {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 35px rgba(156, 163, 175, 0.6); /* gray-400 */
+  }
+}
+.animate-floatAndGlow {
+  animation: floatAndGlow 4s ease-in-out infinite;
+}
+
+.hover-effect:hover {
+  transform: scale(1.1);
+  text-shadow: 0px 4px 10px rgba(156, 163, 175, 0.7); /* gray-400 */
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes softGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+  }
+}
+
+.animate-softGlow {
+  animation: softGlow 4s infinite ease-in-out;
+}

@@ -1,0 +1,103 @@
+{
+  "projects": [
+    {
+      "name": "Echojam Radio",
+      "description": "A streaming-ready homepage concept for an underground internet radio station. Built with playful animations, a mood-based show calendar, and embedded audio player support for indie DJs.",
+      "stack": ["React", "Vite", "Tailwind CSS", "Howler.js"],
+      "status": "Completed",
+      "github": "/",
+      "liveDemo": "/",
+      "image": "/assets/default.png",
+      "contributions": [
+        "Designed the layout and visual branding to reflect lo-fi, nighttime aesthetics",
+        "Integrated Howler.js to create a seamless audio player experience",
+        "Built a schedule carousel component using custom Tailwind transitions",
+        "Added light/dark theme toggle synced to system preferences",
+        "Embedded accessibility-first keyboard controls for navigating media and playlists"
+      ]
+    },
+    {
+      "name": "Potion Planner",
+      "description": "A whimsical form-based app for organizing potion ingredients, magical properties, and brewing instructions—complete with real-time filtering and customizable potion categories.",
+      "stack": ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+      "status": "Completed",
+      "github": "/",
+      "liveDemo": "/",
+      "image": "/assets/default.png",
+      "contributions": [
+        "Created a fully responsive UI with sortable cards and animated form feedback",
+        "Used Framer Motion to create spellbook-style transitions between views",
+        "Built form validation and category tagging system for potion types",
+        "Wrote accessible labels and helper text for screen reader support",
+        "Optimized layout for tablet and mobile brewing labs"
+      ]
+    },
+    {
+      "name": "Nimbus Notes",
+      "description": "A cloud-themed note-taking interface that syncs thought fragments with a minimalist UI. Features markdown support, tag filters, and pastel visual theming for cozy productivity.",
+      "stack": ["React", "Tailwind CSS", "Markdown-it", "LocalStorage"],
+      "status": "Completed",
+      "github": "/",
+      "liveDemo": "/",
+      "image": "/assets/default.png",
+      "contributions": [
+        "Designed a soft-focus UI using Tailwind and CSS blur effects",
+        "Integrated Markdown-it to support formatted note previews",
+        "Built a custom tag-based filtering system with localStorage persistence",
+        "Implemented a subtle autosave system with local feedback indicators",
+        "Enhanced accessibility with skip links and keyboard navigation"
+      ]
+    }
+  ],
+  "pageInfo": {
+    "LinkedIn": "/",
+    "GitHub": "/",
+    "pageUrl": "/",
+    "title": "EmberCodes() → ✨ UI Alchemy",
+    "tagline": "Frontend developer crafting clean, interactive interfaces with a sprinkle of magic.",
+    "header1": "Meet Ember",
+    "header2": "Projects",
+    "header3": "Say Hello",
+    "contactMessage": "Got a question or a quest? Reach out through the enchanted form below.",
+    "formKey": "",
+    "defaultImage": "/assets/default.png",
+    "startYear": 2025,
+    "footerMessage": "This site is a demo. The spells are real, but the links are not."
+  },
+  "user": {
+    "avatar": "/assets/default.png",
+    "avatarAlt": "glowing lantern icon",
+    "profilePic": "/assets/default.png",
+    "profilePicAlt": "whimsical profile illustration of Ember Lin",
+    "logo": "/assets/default.png",
+    "name": "Ember Lin",
+    "title": "Frontend Developer",
+    "languages": ["JavaScript", "React", "CSS", "Java"],
+    "aboutTagline": "Bringing ideas to life with clean code, thoughtful design, and a hint of magic.",
+    "aboutMe": [
+      {
+        "letter": "W",
+        "paragraph": "ith roots in storytelling and creative design, Ember builds experiences that prioritize clarity, joy, and accessibility."
+      },
+      {
+        "letter": "A",
+        "paragraph": "fter experimenting with digital art and UX, Ember ventured into the world of frontend development, where imagination meets logic."
+      },
+      {
+        "letter": "M",
+        "paragraph": "ost recently, Ember contributed to a small team rewriting legacy interfaces and building tools to help volunteers streamline data entry. Their work emphasized clean components and friendly user flows."
+      },
+      {
+        "letter": "O",
+        "paragraph": "utside of collaborative projects, Ember has crafted demo sites for fictional brands, explored dynamic UI animation, and refined layouts that adapt across devices and moods."
+      },
+      {
+        "letter": "I",
+        "paragraph": "n every project, Ember blends structure with play—writing maintainable code, asking good questions, and chasing that ✨ feeling when an interface just feels right."
+      }
+    ],
+    "experience": {
+      "currentCompany": "Independent Developer (Demo)"
+    }
+  }
+}
